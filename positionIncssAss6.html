@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Game</title>
+
+    <style>
+       
+        .heading{
+            text-align: center;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 6px;
+            position: absolute;
+            padding-top: 50px;
+            padding-left: 50px;
+        }
+        /* .box>img{
+            opacity: 0;
+        } */
+        .box1{
+            top: 90px;
+            background-color: rgb(6, 6, 230);
+        }
+        .box2{
+            top: 120px;
+            left: 50px;
+            background-color: rgb(3, 199, 3);
+        }
+        .box3{
+            top: 150px;
+            left: 100px;
+            background-color: rgb(235, 200, 3);
+        }
+        /* .box>img:hover{
+            opacity: 1;
+        } */
+        .box1:hover{
+            z-index: 1;
+        }
+        .box2:hover{
+            z-index: 2;
+        }
+        .box3:hover{
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="heading">
+        <h3>Hover to Unveil the Pokemon</h3>
+    </div>
+    <div>
+        <div class="box box1">
+            <img src="https://www.pngmart.com/files/12/Charizard-Transparent-PNG.png" width="150px">
+        </div>
+        <div class="box box2"> 
+            <img src="https://i.pinimg.com/originals/46/7e/db/467edb818bc862ef7f54dece5df4d762.png" width="150px" alt="">
+        </div>
+        <div class="box box3">
+            <img src="https://i.pinimg.com/originals/48/1d/a3/481da3557c38dcffa7c75aa6e581aefb.png" width="150px" alt="">
+        </div>
+    </div>
+
+</body>
+</html>

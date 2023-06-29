@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+
+        }
+        div{
+            margin-left: 100px;
+            text-align: center;
+        }
+        h3{
+            font-family: 'Oswald', sans-serif;
+            font-weight: lighter;
+            font-size: larger;
+            margin-left: 250px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        #name, #mail, #tele, #message{
+            border: none;
+            outline: none;
+        }
+        #select{
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>
+        Contact us
+    </h3>
+    <div>
+        <form action="submit">
+
+            <table border="1px" cellspacing="10px">
+                <caption>We'd love to hear from you! Leave a message below and we will get in touch with you shortly.
+                </caption>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" placeholder="John Doe"></td>
+                </tr>
+                <tr>
+                    <td><label for="mail">Email:</label></td>
+                    <td><input type="email" id="mail" placeholder="john@example.com"></td>
+                </tr>
+                <tr>
+                    <td><label for="tele">Phone:</label></td>
+                    <td><input type="tel" id="tele" placeholder="123-456-7890"></td>
+                </tr>
+                <tr>
+                    <td>Contact me by:</td>
+                    <td>
+                        <input type="radio" name="method" id="email">E-mail 
+                        <input type="radio" name="method" id="phone">Phone
+                    </td>
+                </tr>
+                <tr>
+                    <td>Question for:</td>
+                    <td>
+                        <select id="select">
+                            <option value="1">Mid-Sem Exams</option>
+                            <option value="2">Minor Tests</option>
+                            <option value="3">End-Sem Exams</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Message:</td>
+                    <td><textarea cols="30" rows="2" id="message" placeholder="Send us your feedback"></textarea></td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+</body>
+
+</html>

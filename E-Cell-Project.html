@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Cell</title>
+    <link rel="shortcut icon" href="https://res.cloudinary.com/dp92qug2f/image/upload/v1678341163/Ecell%20website/ecell-logo-bw2_sayvqp.webp" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Oswald', sans-serif;
+        }
+        body{
+            background: linear-gradient(rgb(161, 118, 230), rgb(60, 83, 61));
+        }
+
+        .page1 {
+            /* background: linear-gradient(pink, rgb(122, 243, 128)); */
+            color: rgb(0, 0, 0);
+        }
+
+        .main1{
+            margin: 0px 50px;
+        }
+
+        .containerofpage1 {
+            background-color: rgb(195, 199, 201);
+            position: sticky;
+            top: 0px;
+            width: 100vw;
+            box-shadow: 0px 2px 10px rgb(197, 204, 206);
+        }
+
+        nav {
+            padding: 20px;
+        }
+
+        .navlist {
+            display: inline;
+            margin: 30px;
+        }
+
+        .link {
+            font-weight: bold;
+            font-size: large;
+            text-decoration: none;
+            color: rgb(95, 2, 2);
+            opacity: 0.6;
+        }
+
+        .link:hover {
+            color: brown;
+            opacity: 1;
+        }
+
+        section {
+            margin: 50px 0px;
+        }
+
+        section>h4 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 40px;
+        }
+
+        section>div>img {
+            border: white 2px solid;
+            background-color: white;
+            border-radius: 20%;
+
+        }
+
+        .float-right {
+            float: right;
+            margin: 0px 40px;
+        }
+
+        .float-left {
+            float: left;
+            margin: 0px 40px;
+        }
+
+        #swastik {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            opacity: 0.7;
+        }
+
+
+
+
+
+        .page2{
+            /* background-color: rgb(125, 125, 230); */
+        }
+
+        .h2ofpage2 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .description {
+            /* display: flex;
+           flex-direction: column;
+           align-items: center;
+           border: solid black 1px;  */
+           text-align: center; 
+
+        }
+
+        .h2,
+        .para {
+            /* background-color: blue; */
+            margin: 0px;
+        }
+
+        .sub-container {
+            display: flex;
+            /* border: 1px solid green; */
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-top: 40px;
+        }
+
+        .fitem {
+
+            background-color: rgb(2, 2, 32);
+            color: rgb(198, 241, 241);
+            border-radius: 6px;
+            width: 300px;
+            height: 200px;
+            border: 1px solid rgb(2, 2, 32);
+            margin: 10px;
+            padding: 3px;
+        }
+
+        /* .t-stack{
+           background-color: blueviolet;
+        } */
+        .t-stack-list {
+            /* background-color: green; */
+            list-style-type: none;
+            margin: 30px 0px;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+            /* gap: 15px; */
+
+        }
+
+
+        .footer{
+            border: 1px solid rgb(4, 71, 71);
+            background-color: black;
+            color: rgb(198, 241, 241);
+            display: flex;
+            justify-content: space-around;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            font-weight: bold;
+            position: sticky;
+            top: 100vh;
+            
+        }
+        .container1ofpage3>a{
+            text-decoration: none;
+            color: rgb(198, 241, 241);
+        }
+        .iso{
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+        .container2ofpage3>h2{
+            border-bottom: 2px solid #e07800;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        table{
+            /* border: 1px solid black; */
+        }
+        td{
+            /* border: 1px solid black; */
+            width: 100px;
+        }
+        .container3ofpage3>h2{
+            border-bottom: 2px solid #e07800;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .container3ofpage3>ul{
+            /* border: 1px solid; */
+            list-style-type: none;
+            padding-left: 0px;
+            padding-top: 20px;
+        }
+        .container3ofpage3>ul>li{
+            margin-bottom: 10px;
+        }
+        .filelinking>a{
+            color: #382004;
+            font-weight: bold;
+            font-size: larger;
+            margin-left: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="containerofpage1">
+        <nav>
+            <ul style="list-style-type: none;">
+                <li class="navlist"><a class="link" href="#sec1">Page One</a></li>
+                <li class="navlist"><a class="link" href="#sec2">Page Two</a></li>
+                <li class="navlist"><a class="link" href="#links">Links of Other Files</a></li>
+                <li class="navlist"><a class="link" href="#sec3">Footer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="page1" id="sec1">    
+    
+    <main class="main1">
+
+        <section>
+            <h4>Shri Ram</h4>
+            <div class="float-right"><img src="Siya_Ram.jpg" alt="Ram" width="240px"></div>
+            <article>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ullam dicta assumenda cupiditate,
+                voluptas laboriosam tempore laudantium beatae praesentium nulla accusamus repudiandae delectus
+                consequatur quis qui? Porro quasi quibusdam incidunt vero laborum? Ipsa dignissimos, enim ad deleniti
+                incidunt necessitatibus, rerum iure autem rem mollitia quis delectus, possimus eius sed iste. Aliquam
+                corrupti quam repellendus odit blanditiis quaerat, saepe nihil nisi. Dicta natus nam rerum saepe,
+                placeat magnam harum. Non ipsam quibusdam veritatis, eaque facilis dolore eos accusantium voluptatibus,
+                ab soluta quis iste maiores hic qui pariatur corrupti eligendi facere praesentium. Odio nobis blanditiis
+                voluptas nemo, possimus a quos molestiae, autem, modi dolorem minima iusto. Obcaecati, totam
+                perspiciatis veniam iste doloremque non. Laudantium sapiente doloremque aliquid perspiciatis facilis,
+                adipisci consequatur expedita ullam ab quae! Excepturi, illo doloremque. Dolore quaerat repellendus ex,
+                laborum earum laudantium reprehenderit aliquam consectetur optio impedit accusamus illo explicabo, omnis
+                temporibus. Error delectus voluptates excepturi quam, cum tempore voluptatibus hic nulla assumenda
+                soluta, cumque, rem quod? Facere illum repellendus commodi mollitia perspiciatis maiores ad, optio iure
+                autem, ipsa assumenda odio unde sed cupiditate accusamus praesentium hic ducimus, debitis quidem? Fugiat
+                esse minus necessitatibus iusto voluptate quidem nemo, voluptas, laborum explicabo tempora sint eveniet
+                unde, inventore exercitationem. Saepe eveniet corrupti odio eos! Assumenda dicta ea veritatis
+                perferendis quibusdam vel voluptatem soluta recusandae? Libero incidunt dicta repellat corporis tenetur
+                eligendi! Fugit magnam debitis doloremque error quas nobis nemo dolor? Quasi natus ratione veniam
+                nesciunt alias cum dicta vel doloribus neque, totam dolorum facilis reiciendis quos autem. Quisquam
+                quaerat alias magni esse odit non praesentium quae, ipsum amet fuga. Consectetur explicabo veniam
+                architecto voluptatibus dolore voluptatum quas commodi! Repellat, doloremque natus fugiat hic laboriosam
+                veritatis architecto amet odit, vero dicta omnis quis impedit incidunt voluptatibus dolor! Accusamus
+                quia voluptates modi dolore, voluptatibus maxime iste, eos illo sint quam eum harum ut autem perferendis
+                ipsum architecto et culpa vero sit atque quae. Consectetur ad sed asperiores? Voluptatum dicta
+                voluptatibus saepe eos. Natus ipsum perferendis cumque temporibus iste illum, consectetur error sapiente
+                repellat voluptatum ipsam consequatur quae harum, sed est qui enim consequuntur.
+            </article>
+        </section>
+
+        <section>
+            <h4>Shri Krishna</h4>
+            <div class="float-left"><img src="Krishn.jpeg" alt="Krishna" width="240px"></div>
+            <article>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ullam dicta assumenda cupiditate,
+                voluptas laboriosam tempore laudantium beatae praesentium nulla accusamus repudiandae delectus
+                consequatur quis qui? Porro quasi quibusdam incidunt vero laborum? Ipsa dignissimos, enim ad deleniti
+                incidunt necessitatibus, rerum iure autem rem mollitia quis delectus, possimus eius sed iste. Aliquam
+                corrupti quam repellendus odit blanditiis quaerat, saepe nihil nisi. Dicta natus nam rerum saepe,
+                placeat magnam harum. Non ipsam quibusdam veritatis, eaque facilis dolore eos accusantium voluptatibus,
+                ab soluta quis iste maiores hic qui pariatur corrupti eligendi facere praesentium. Odio nobis blanditiis
+                voluptas nemo, possimus a quos molestiae, autem, modi dolorem minima iusto. Obcaecati, totam
+                perspiciatis veniam iste doloremque non. Laudantium sapiente doloremque aliquid perspiciatis facilis,
+                adipisci consequatur expedita ullam ab quae! Excepturi, illo doloremque. Dolore quaerat repellendus ex,
+                laborum earum laudantium reprehenderit aliquam consectetur optio impedit accusamus illo explicabo, omnis
+                temporibus. Error delectus voluptates excepturi quam, cum tempore voluptatibus hic nulla assumenda
+                soluta, cumque, rem quod? Facere illum repellendus commodi mollitia perspiciatis maiores ad, optio iure
+                autem, ipsa assumenda odio unde sed cupiditate accusamus praesentium hic ducimus, debitis quidem? Fugiat
+                esse minus necessitatibus iusto voluptate quidem nemo, voluptas, laborum explicabo tempora sint eveniet
+                unde, inventore exercitationem. Saepe eveniet corrupti odio eos! Assumenda dicta ea veritatis
+                perferendis quibusdam vel voluptatem soluta recusandae? Libero incidunt dicta repellat corporis tenetur
+                eligendi! Fugit magnam debitis doloremque error quas nobis nemo dolor? Quasi natus ratione veniam
+                nesciunt alias cum dicta vel doloribus neque, totam dolorum facilis reiciendis quos autem. Quisquam
+                quaerat alias magni esse odit non praesentium quae, ipsum amet fuga. Consectetur explicabo veniam
+                architecto voluptatibus dolore voluptatum quas commodi! Repellat, doloremque natus fugiat hic laboriosam
+                veritatis architecto amet odit, vero dicta omnis quis impedit incidunt voluptatibus dolor! Accusamus
+                quia voluptates modi dolore, voluptatibus maxime iste, eos illo sint quam eum harum ut autem perferendis
+                ipsum architecto et culpa vero sit atque quae. Consectetur ad sed asperiores? Voluptatum dicta
+                voluptatibus saepe eos. Natus ipsum perferendis cumque temporibus iste illum, consectetur error sapiente
+                repellat voluptatum ipsam consequatur quae harum, sed est qui enim consequuntur.
+            </article>
+        </section>
+
+        <div id="swastik">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzGq15mdlauAEB070W9AJ_Kc72PhaY-6JRRV2gp_w&s"
+                width="80px" alt="">
+        </div>
+    </main>
+</div>
+
+<div class="page2" id="sec2">
+
+    <!-- container -->
+    <div class="containerofpage2">
+        <!-- description -->
+        <div class="description">
+            <h2 class="h2 h2ofpage2">Projects Card</h2>
+            <p class="para">Flex mini project of card demo</p>
+        </div>
+        <!-- project card container -->
+        <div class="sub-container">
+            <!-- project item 1 -->
+            <div class="fitem">
+                <!-- svg -->
+                <h2 class="h2ofpage2">Project title</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo architecto vero sint blanditiis
+                    maiores minus reiciendis amet dolor similique magnam?</p>
+                <div class="t-stack">
+                    <ul class="t-stack-list">
+                        <li class="t-stack-item">JavaScript</li>
+                        <li class="t-stack-item">React</li>
+                        <li class="t-stack-item">Node</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- project item 2 -->
+            <div class="fitem">
+                <!-- svg -->
+                <h2 class="h2ofpage2">Project title</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo architecto vero sint blanditiis
+                    maiores minus reiciendis amet dolor similique magnam?</p>
+                <div class="t-stack">
+                    <ul class="t-stack-list">
+                        <li class="t-stack-item">JavaScript</li>
+                        <li class="t-stack-item">React</li>
+                        <li class="t-stack-item">Node</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- project item 3 -->
+            <div class="fitem">
+                <!-- svg -->
+                <h2 class="h2ofpage2">Project title</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo architecto vero sint blanditiis
+                    maiores minus reiciendis amet dolor similique magnam?</p>
+                <div class="t-stack">
+                    <ul class="t-stack-list">
+                        <li class="t-stack-item">JavaScript</li>
+                        <li class="t-stack-item">React</li>
+                        <li class="t-stack-item">Node</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- project item 4 -->
+            <div class="fitem">
+                <!-- svg -->
+                <h2 class="h2ofpage2">Project title</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo architecto vero sint blanditiis
+                    maiores minus reiciendis amet dolor similique magnam?</p>
+                <div class="t-stack">
+                    <ul class="t-stack-list">
+                        <li class="t-stack-item">JavaScript</li>
+                        <li class="t-stack-item">React</li>
+                        <li class="t-stack-item">Node</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- project item 5 -->
+            <div class="fitem">
+                <!-- svg -->
+                <h2 class="h2ofpage2">Project title</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo architecto vero sint blanditiis
+                    maiores minus reiciendis amet dolor similique magnam?</p>
+                <div class="t-stack">
+                    <ul class="t-stack-list">
+                        <li class="t-stack-item">JavaScript</li>
+                        <li class="t-stack-item">React</li>
+                        <li class="t-stack-item">Node</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- project item 6 -->
+            <div class="fitem">
+                <!-- svg -->
+                <h2 class="h2ofpage2">Project title</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo architecto vero sint blanditiis
+                    maiores minus reiciendis amet dolor similique magnam?</p>
+                <div class="t-stack">
+                    <ul class="t-stack-list">
+                        <li class="t-stack-item">JavaScript</li>
+                        <li class="t-stack-item">React</li>
+                        <li class="t-stack-item">Node</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- project item 7 -->
+            <div class="fitem">
+                <!-- svg -->
+                <h2 class="h2ofpage2">Project title</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo architecto vero sint blanditiis
+                    maiores minus reiciendis amet dolor similique magnam?</p>
+                <div class="t-stack">
+                    <ul class="t-stack-list">
+                        <li class="t-stack-item">JavaScript</li>
+                        <li class="t-stack-item">React</li>
+                        <li class="t-stack-item">Node</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="filelinking" id="links">
+        <a href="positionIncssAss6.html" target="_blank">Click here to go to a Pokemon game!</a><br>
+        <a href="Ass_Flex_2.html" target="_blank">Click here to see the PW Skills advertisement</a><br>
+        <a href="contact_form.html" target="_blank">Click here to open a Contact form</a>
+    </div>
+</div>
+
+<div class="page3" id="sec3">
+
+    <footer class="footer">
+
+        <div class="container1ofpage3">
+            <img src="https://pwskills.com/images/PWSkills-white.png" width="100px" height="50px"><br>
+            <b>Email us:</b><br>
+            <a href="mailto:support@pwskills.com">support@pwskills.com</a><br>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-EnQStKgVd6g_SmLk47sbqR-6T8n4UBzvJDAqfvdC&s" width="100px" height="100px" class="iso"><br>
+            <span>ISO 9001</span>
+
+        </div>
+
+        <div class="container2ofpage3">
+            <h2>PW Skills</h2>
+            <table cellpadding="13px" cellspacing="10px" >
+                <tr>
+                    <td>About Us</td>
+                    <td>Contact Us</td>
+                </tr>
+                <tr>
+                    <td>FAQs</td>
+                    <td>Job assistance</td>
+                </tr>
+                <tr>
+                    <td>Privacy policy</td>
+                    <td>Terms and conditions</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container3ofpage3">
+            <h2>Products</h2>
+            <ul>
+                <li>PW Skills Lab</li>
+                <li>Job Portal</li>
+                <li>Experience portal</li>
+                <li>Become an affilitate</li>
+                <li>Hall of fame</li>
+            </ul>
+        </div>
+
+    </footer>
+
+
+
+
+
+</div>
+
+
+</body>
+
+</html>
